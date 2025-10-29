@@ -32,13 +32,27 @@ Le style inclut :
 
 ## Prérequis
 
-- Système Linux (Arch, Ubuntu, Debian, Fedora)
-- Accès sudo pour l'installation des paquets
+- Système Linux (Arch, Ubuntu, Debian, Fedora, NixOS)
+- Accès sudo pour l'installation des paquets (sauf NixOS avec Home Manager)
 - Connexion Internet
 
 ## Installation
 
-### Installation rapide (recommandée)
+### NixOS
+
+Si vous utilisez NixOS, consultez le guide dédié : **[NIXOS-INSTALL.md](NIXOS-INSTALL.md)**
+
+```bash
+# Installation rapide pour NixOS
+git clone https://github.com/roroNFT/dot-hyprland.git
+cd dot-hyprland
+chmod +x install-nixos.sh
+./install-nixos.sh
+```
+
+Voir aussi les exemples de configuration dans le dossier `nixos/`.
+
+### Autres distributions (Installation rapide)
 
 ```bash
 # Cloner ce repository
@@ -265,6 +279,7 @@ rm -rf ~/.config/mako
 
 - ✅ Arch Linux / Manjaro / EndeavourOS (recommandé)
 - ✅ Fedora
+- ✅ NixOS (voir [NIXOS-INSTALL.md](NIXOS-INSTALL.md))
 - ⚠️ Ubuntu / Debian (Hyprland doit être installé manuellement)
 - ⚠️ Pop!_OS (Hyprland doit être installé manuellement)
 
