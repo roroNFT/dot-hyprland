@@ -1,0 +1,25 @@
+# Fichiers de sauvegarde
+*.bak
+*~
+.backup/
+
+# Logs
+*.log
+
+# Fichiers temporaires
+*.tmp
+*.swp
+*.swo
+
+# Configurations locales
+config.local
+*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
