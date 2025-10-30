@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 #############################################
 # Script de customisation Hyprland         #
@@ -927,7 +927,7 @@ download_wallpaper() {
 
     # Créer un script pour changer le wallpaper
     cat > "$HOME/.config/hypr/scripts/wallpaper.sh" << 'EOF'
-#!/bin/bash
+#!/usr/bin/env bash
 # Script de changement de wallpaper
 
 WALLPAPER_DIR="$HOME/Pictures/Wallpapers"
