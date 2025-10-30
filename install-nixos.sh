@@ -216,15 +216,16 @@ decoration {
         enabled = true
         size = 7
         passes = 4
-        new_optimizations = on
         ignore_opacity = true
         xray = false
     }
 
-    drop_shadow = no
-    shadow_range = 4
-    shadow_render_power = 3
-    col.shadow = rgba(1a1a1aee)
+    shadow {
+        enabled = false
+        range = 4
+        render_power = 3
+        color = rgba(1a1a1aee)
+    }
 }
 
 # Animations
