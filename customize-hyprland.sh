@@ -289,7 +289,7 @@ input {
     numlock_by_default = true
 
     touchpad {
-        natural_scroll = yes
+        natural_scroll = true
         disable_while_typing = true
         tap-to-click = true
     }
@@ -329,16 +329,14 @@ decoration {
 
 # Animations
 animations {
-    enabled = yes
+    enabled = true
 
     bezier = md3_standard, 0.2, 0.0, 0, 1.0
     bezier = md3_decel, 0.05, 0.7, 0.1, 1
     bezier = md3_accel, 0.3, 0, 0.8, 0.15
     bezier = overshot, 0.05, 0.9, 0.1, 1.05
     bezier = hyprnostretch, 0.05, 0.9, 0.1, 1.0
-    bezier = win10, 0, 0, 0, 1
     bezier = gnome, 0, 0.85, 0.3, 1
-    bezier = funky, 0.46, 0.35, -0.2, 1.2
 
     animation = windows, 1, 2, md3_decel, slide
     animation = windowsIn, 1, 2, md3_decel, slide
@@ -351,18 +349,18 @@ animations {
 
 # Layouts
 dwindle {
-    pseudotile = yes
-    preserve_split = yes
+    pseudotile = true
+    preserve_split = true
     no_gaps_when_only = false
 }
 
 master {
-    new_is_master = true
+    new_status = master
 }
 
 # Gestes
 gestures {
-    workspace_swipe = on
+    workspace_swipe = true
     workspace_swipe_fingers = 4
 }
 
@@ -372,7 +370,8 @@ misc {
     disable_splash_rendering = true
     mouse_move_enables_dpms = true
     key_press_enables_dpms = true
-    vrr = 0
+    force_default_wallpaper = 0
+    vfr = true
 }
 
 # Règles des fenêtres
